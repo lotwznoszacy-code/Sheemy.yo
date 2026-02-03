@@ -116,13 +116,6 @@ html {
 	color: var(--accent-blue);
 }
 
-.nav-link::after {
-	content: '∨';
-	margin-left: 0.35rem;
-	font-size: 0.7rem;
-	opacity: 0.6;
-}
-
 .cta-button {
 	background: var(--primary-teal);
 	color: #ffffff;
@@ -1101,7 +1094,7 @@ html {
 		gap: 2rem;
 	}
 
-	.contact-form {
-		padding: 2rem;
+	.contact-info {
+		grid-template-columns: 1fr;
 	}
 }
