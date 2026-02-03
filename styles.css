@@ -729,19 +729,25 @@ html {
 }
 
 .contact-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 4rem;
+	width: 100%;
+	height: fit-content;
 	margin-top: 3rem;
 }
 
 .contact-info {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
 	animation: fadeInLeft 0.8s ease-out both;
 }
 
 .contact-item {
+	justify-content: center;
 	display: flex;
 	align-items: flex-start;
+	justify-content: flex-start;
+	width: auto;
 	gap: 1.5rem;
 	margin-bottom: 2.5rem;
 }
@@ -945,6 +951,7 @@ html {
 
 /* Chat bubble */
 .chat-bubble {
+	display: none;
 	position: fixed;
 	bottom: 2rem;
 	right: 2rem;
